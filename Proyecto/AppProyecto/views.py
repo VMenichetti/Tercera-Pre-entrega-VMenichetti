@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from .models import *
-from .forms import FormProducto
+from .forms import FormProducto,FormCategoria
 
 # Create your views here.
 
@@ -33,3 +33,20 @@ def formProducto(req):
     else:
         miFormulario=FormProducto()
         return render(req, "formProducto.html",{"miFormulario":miFormulario})
+    
+def formCategoria(req):
+    print('method',req.method)
+    print('POST',req.POST)
+
+    if req.method == 'POST':
+        miFormulario=FormCategoria(req.POST)
+        if miFormulario.is_valid():
+            data=miFormulario.cleaned_data
+            categoria=Categoria(nombre=data['nombre'])
+            categoria.save()
+
+        return render(req,"formCategoria.html")
+    
+    else:
+        miFormulario=FormCategoria()
+        return render(req, "formCategoria.html",{"miFormulario":miFormulario})
