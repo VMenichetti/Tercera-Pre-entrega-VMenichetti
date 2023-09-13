@@ -7,3 +7,9 @@ class FormProducto(forms.Form):
 
 class FormCategoria(forms.Form):
     nombre = forms.CharField(max_length=100)
+
+class FormCliente (forms.Form):
+    usuario=forms.CharField(max_length=20)
+    edad=forms.IntegerField()
+    email=forms.EmailField()
+    direccion=forms.CharField(max_length=40)

@@ -1,0 +1,16 @@
+{% extends 'padre.html' %}
+
+
+{% block contenidoQueCambia1 %}
+    
+    <form action="{% url 'formularioCliente' %}" method="post"> {% csrf_token %}
+        <p>Usuario: <input type="text" name="usuario"></p>
+        <p>Edad: <input type="number" name="edad"></p>
+        <p>Email: <input type="email" name="email"></p>
+        <p>Dirección: <input type="text" name="direccion"></p>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+
+{% endblock contenidoQueCambia1 %}
