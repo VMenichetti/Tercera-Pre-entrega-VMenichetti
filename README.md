@@ -26,7 +26,7 @@ Se debe entregar:
 
 ## ⬇️ Instalacion
 
-1. Clonamos el repositorio
+1. Clonamos la rama "master" del repositorio
 git clone [https://github.com/VMenichetti/Tercera-Pre-entrega-VMenichetti]
 2. Nos situamos en el proyecto
 cd Proyecto
@@ -35,4 +35,15 @@ python manage.py runserver
 4. Starting development server at http://127.0.0.1:8000/
 5. Colocamos en la URL la extension
    /app-proyecto/
-6. Una vez situados en la aplicación web, podemos observar que el Navbar contiene las siguientes pestañas: Inicio, Productos, Categoria y Clientes
+6. Una vez situado en la pagina principal se podran observar todas las partes de la pagina, desde el navbar y el footer, hasta las pestañas de productos.
+7. Para agregar producto con el formulario, nos dirigimos a la url
+
+http://127.0.0.1:8000/app-proyecto/formulario-producto/
+
+8. Para agregar clientes con el formulario, nos dirigimos a la url
+
+http://127.0.0.1:8000/app-proyecto/formulario-cliente/
+
+9. Para agregar categorias con el formulario, nos dirigimos a la url
+
+http://127.0.0.1:8000/app-proyecto/formulario-categoria/
