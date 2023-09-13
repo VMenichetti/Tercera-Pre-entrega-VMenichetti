@@ -1,0 +1,16 @@
+{% extends 'padre.html' %}
+
+
+{% block contenidoQueCambia1 %}
+    
+    <form action="{% url 'formularioProducto' %}" method="post"> {% csrf_token %}
+        <p>Nombre: <input type="text" name="nombre"></p>
+        <p>Descripcion: <input type="text" name="descripcion"></p>
+        <p>Precio: <input type="number" name="precio"></p>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+
+{% endblock contenidoQueCambia1 %}
+    
