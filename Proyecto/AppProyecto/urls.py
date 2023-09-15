@@ -9,4 +9,8 @@ urlpatterns = [
     path('formulario-producto/',formProducto,name="formularioProducto"),
     path('formulario-categoria/',formCategoria,name="formularioCategoria"),
     path('formulario-cliente/',formCliente,name="formularioCliente"),
+    path('lista-productos',listar_productos,name="ListaProductos"),
+    path('busqueda-producto/',busquedaProducto,name="BusquedaProducto"),
+    path('buscar/',buscar,name="Buscar"),
+
 ]

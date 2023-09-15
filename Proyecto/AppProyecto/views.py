@@ -1,9 +1,13 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpRequest
 from django.shortcuts import render
 from .models import *
 from .forms import FormProducto,FormCategoria,FormCliente
 
 # Create your views here.
+
+def listar_productos(req):
+    lista=Producto.objects.all()
+    return render(req,"lista_productos.html",{"lista_productos":lista})
 
 def inicio(req):
     return render(req, "inicio.html")
@@ -67,3 +71,17 @@ def formCliente(req):
     else:
         miFormulario=FormCliente()
         return render(req, "formCliente.html",{"miFormulario":miFormulario})
+
+# Busqueda
+
+def busquedaProducto(req):
+    return render(req,"busquedaProducto.html")
+
+def buscar(req:HttpRequest):
+    if req.GET["nombre"]:
+        nombre=req.GET["nombre"]
+        nombres=Producto.objects.filter(nombre__icontains=nombre)
+        return render(req, "resultadosBusqueda.html",{"nombres":nombres})
+    
+    else:
+        return HttpResponse(f'Debe agregar un producto')
