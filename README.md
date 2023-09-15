@@ -47,3 +47,7 @@ http://127.0.0.1:8000/app-proyecto/formulario-cliente/
 9. Para agregar categorias con el formulario, nos dirigimos a la url
 
 http://127.0.0.1:8000/app-proyecto/formulario-categoria/
+
+10. Para la busqueda de Productos, ingresar a la siguiente URL
+
+http://127.0.0.1:8000/app-proyecto/busqueda-producto/
