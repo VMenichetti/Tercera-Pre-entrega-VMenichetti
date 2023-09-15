@@ -27,7 +27,9 @@ Se debe entregar:
 ## ⬇️ Instalacion
 
 1. Clonamos la rama "master" del repositorio
+```
 git clone [https://github.com/VMenichetti/Tercera-Pre-entrega-VMenichetti]
+```
 2. Nos situamos en el proyecto
 cd Proyecto
 3. Ejecutamos la aplicacion web
@@ -37,23 +39,23 @@ python manage.py runserver
    /app-proyecto/
 6. Una vez situado en la pagina principal se podran observar todas las partes de la pagina, desde el navbar y el footer, hasta las pestañas de productos.
 7. Para agregar producto con el formulario, nos dirigimos a la url
-
+```
 http://127.0.0.1:8000/app-proyecto/formulario-producto/
-
+```
 8. Para agregar clientes con el formulario, nos dirigimos a la url
-
+```
 http://127.0.0.1:8000/app-proyecto/formulario-cliente/
-
+```
 9. Para agregar categorias con el formulario, nos dirigimos a la url
-
+```
 http://127.0.0.1:8000/app-proyecto/formulario-categoria/
-
+```
 10. Para la busqueda de Productos, ingresar a la siguiente URL
-
+```
 http://127.0.0.1:8000/app-proyecto/busqueda-producto/
-
+```
 Para verificar que las cargas se hayan realizado exitosamente, ingresamos con el usuario admin, para eso entramos a la url
-
+```
 http://127.0.0.1:8000/admin/
-
+```
 y utilizamos como usuario: vmenichetti y como contraseña: Aa123456
