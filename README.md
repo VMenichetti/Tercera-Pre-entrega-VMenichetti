@@ -51,3 +51,9 @@ http://127.0.0.1:8000/app-proyecto/formulario-categoria/
 10. Para la busqueda de Productos, ingresar a la siguiente URL
 
 http://127.0.0.1:8000/app-proyecto/busqueda-producto/
+
+Para verificar que las cargas se hayan realizado exitosamente, ingresamos con el usuario admin, para eso entramos a la url
+
+http://127.0.0.1:8000/admin/
+
+y utilizamos como usuario: vmenichetti y como contraseña: Aa123456
