@@ -3,14 +3,26 @@
 
 {% block contenidoQueCambia1 %}
     
-    <form action="{% url 'formularioCliente' %}" method="post"> {% csrf_token %}
-        <p>Usuario: <input type="text" name="usuario"></p>
-        <p>Edad: <input type="number" name="edad"></p>
-        <p>Email: <input type="email" name="email"></p>
-        <p>Dirección: <input type="text" name="direccion"></p>
-
-        <button type="submit">Enviar</button>
-    </form>
+<h1 class="text-center my-2">Formulario de Registro de Clientes</h1>
+    <form class= "container my-3" action="{% url 'formularioCliente' %}" method="post"> {% csrf_token %}
+        <div class="form-group">
+          <label>Nombre de usuario</label>
+          <input type="text" class="form-control" name="usuario" placeholder="Ingrese su usuario">
+        </div>
+        <div class="form-group">
+          <label>Edad</label>
+          <input type="number" class="form-control" name="edad">
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" class="form-control" name="email" placeholder="Ingrese su email">
+        </div>
+        <div class="form-group">
+          <label>Direccion</label>
+          <input type="text" class="form-control" name="direccion" placeholder="Ingrese su direccion">
+        </div>
+        <button type="submit" class="btn btn-secondary my-2">Enviar</button>
+      </form>
 
 
 {% endblock contenidoQueCambia1 %}

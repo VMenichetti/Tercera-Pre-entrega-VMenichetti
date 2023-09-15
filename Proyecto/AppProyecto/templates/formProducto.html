@@ -2,14 +2,23 @@
 
 
 {% block contenidoQueCambia1 %}
-    
-    <form action="{% url 'formularioProducto' %}" method="post"> {% csrf_token %}
-        <p>Nombre: <input type="text" name="nombre"></p>
-        <p>Descripcion: <input type="text" name="descripcion"></p>
-        <p>Precio: <input type="number" name="precio"></p>
 
-        <button type="submit">Enviar</button>
-    </form>
+<h1 class="text-center my-2">Formulario de Registro de Productos</h1>
+<form class= "container my-3" action="{% url 'formularioProducto' %}" method="post">{% csrf_token %}
+    <div class="form-group">
+      <label>Nombre</label>
+      <input type="text" class="form-control" name="nombre" placeholder="Ingrese el nombre del producto">
+    </div>
+    <div class="form-group">
+      <label>Descripcion</label>
+      <input type="text" class="form-control" name="descripcion" placeholder="Ingrese una descripcion">
+    </div>
+    <div class="form-group">
+      <label>Precio</label>
+      <input type="number" class="form-control" name="precio">
+    </div>
+    <button type="submit" class="btn btn-secondary my-2">Enviar</button>
+  </form>
 
 
 {% endblock contenidoQueCambia1 %}
